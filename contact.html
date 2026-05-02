@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Aso Ebi</title>
+  <meta name="description" content="Get in touch, share your wedding story, or join the Aso Ebi newsletter for weekly Igbo wedding content.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Aso Ebi</span>
+        <span class="nav__logo-sub">Nigerian Wedding Blog</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html"   class="nav__link">Home</a>
+        <a href="blog.html"    class="nav__link">Blog</a>
+        <a href="about.html"   class="nav__link">About</a>
+        <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+      </div>
+      <button class="nav__burger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html"   class="nav__link">Home</a>
+      <a href="blog.html"    class="nav__link">Blog</a>
+      <a href="about.html"   class="nav__link">About</a>
+      <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="contact-hero">
+    <div class="contact-hero__inner">
+      <p class="page-header__eyebrow" style="margin-bottom:16px;">Get In Touch</p>
+      <h1 class="page-header__title serif" style="font-size:52px;margin-bottom:16px;">Contact &amp; Newsletter</h1>
+      <p style="font-size:15px;color:var(--body-text);line-height:1.75;">Have a question, want to collaborate, or just want to share your Igbo wedding story? I'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT BODY -->
+  <div class="contact-body">
+
+    <!-- LEFT: Contact form -->
+    <div>
+      <h2 class="form-section__title serif">Send a Message</h2>
+
+      <div id="contactForm">
+        <div class="form-group">
+          <label class="form-label" for="name">Your Name</label>
+          <input class="form-input" type="text" id="name" placeholder="Adaeze Okonkwo">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input class="form-input" type="email" id="email" placeholder="adaeze@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="subject">Subject</label>
+          <input class="form-input" type="text" id="subject" placeholder="Wedding collaboration / Press enquiry / General">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-input form-textarea" id="message" rows="5" placeholder="Your message..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">Send Message</button>
+      </div>
+
+      <div class="form-success" id="formSuccess">
+        <div class="form-success__check">✓</div>
+        <h3 class="form-success__title serif">Message Sent!</h3>
+        <p class="form-success__text">Thank you for getting in touch. I'll get back to you within 2–3 business days.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: Newsletter + info -->
+    <div>
+      <h2 class="form-section__title serif">Newsletter Signup</h2>
+
+      <div class="contact-newsletter">
+        <div class="contact-newsletter__pattern"></div>
+        <div class="contact-newsletter__inner">
+          <div class="contact-newsletter__title serif">Join the Community</div>
+          <p class="contact-newsletter__desc">Weekly stories, Aso Ebi trends, Igbo ceremony guides, and exclusive content straight to your inbox.</p>
+          <form class="contact-newsletter__form" onsubmit="handleNewsletter(event)">
+            <input type="email" class="contact-newsletter__input" placeholder="Your email" required>
+            <button type="submit" class="contact-newsletter__btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-info__item">
+          <span class="contact-info__label">Email</span>
+          <span class="contact-info__value">hello@asoebi.blog</span>
+        </div>
+        <div class="contact-info__item">
+          <span class="contact-info__label">Instagram</span>
+          <span class="contact-info__value">@asoebi_blog</span>
+        </div>
+        <div class="contact-info__item">
+          <span class="contact-info__label">Response time</span>
+          <span class="contact-info__value">2–3 business days</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name serif">Aso Ebi</div>
+          <p class="footer__brand-desc">Celebrating Igbo and Nigerian wedding traditions, fashion, and culture. Your guide to Aso Ebi, ceremonies, and beauty.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Pages</div>
+          <div class="footer__col-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Categories</div>
+          <div class="footer__col-links">
+            <a href="blog.html?cat=ceremonies">Traditional Ceremonies</a>
+            <a href="blog.html?cat=beauty">Bridal Beauty</a>
+            <a href="blog.html?cat=food">Food &amp; Catering</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Follow</div>
+          <div class="footer__col-links">
+            <span>Instagram</span>
+            <span>Pinterest</span>
+            <span>Twitter/X</span>
+            <span>YouTube</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Aso Ebi. All rights reserved.</span>
+        <span>Made with love for Nigerian weddings</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    function submitForm() {
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+    function handleNewsletter(e) {
+      e.preventDefault();
+      e.target.innerHTML = '<p style="color:var(--gold);font-size:13px;padding:8px 0;">✓ You\'re subscribed! Thank you.</p>';
+    }
+  </script>
+</body>
+</html>

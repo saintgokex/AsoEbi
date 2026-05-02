@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Aso Ebi</title>
+  <meta name="description" content="Aso Ebi was born from a deep love of Igbo wedding culture — the vibrant colours, the sacred rituals, and the joy of community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Aso Ebi</span>
+        <span class="nav__logo-sub">Nigerian Wedding Blog</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html"   class="nav__link">Home</a>
+        <a href="blog.html"    class="nav__link">Blog</a>
+        <a href="about.html"   class="nav__link nav__link--active">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <button class="nav__burger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html"   class="nav__link">Home</a>
+      <a href="blog.html"    class="nav__link">Blog</a>
+      <a href="about.html"   class="nav__link nav__link--active">About</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="about-hero__inner">
+      <div>
+        <p class="about-hero__eyebrow">About the Blog</p>
+        <h1 class="about-hero__title serif">
+          A Love Letter to<br><em>Nigerian Weddings</em>
+        </h1>
+        <p class="about-hero__text">
+          Aso Ebi was born from a deep love of Igbo wedding culture — the vibrant george fabrics, the sacred rituals of the Igba Nkwu, the highlife music that fills the compound, and the profound joy of a whole community coming together to witness love.
+        </p>
+        <p class="about-hero__text">
+          This blog is dedicated to documenting, celebrating, and sharing the beauty of Nigerian weddings — from Igbo wine-carrying ceremonies and bride price traditions, to Aso Ebi fashion, bridal beauty, and food that feeds a village.
+        </p>
+        <a href="contact.html" class="btn--dark">Get in Touch</a>
+      </div>
+      <div>
+        <div class="img-cover" style="height:420px;border-radius:4px;">
+          <img src="https://images.unsplash.com/photo-ZDMms8xjS6Y?auto=format&fit=crop&w=700&q=80"
+               alt="Woman in red and gold Igbo bridal attire — wedding portrait">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE COVER -->
+  <section class="about-covers">
+    <h2 class="about-covers__title serif">What We Cover</h2>
+    <div class="about-covers__grid">
+
+      <div class="cover-card">
+        <div class="cover-card__icon">◈</div>
+        <h3 class="cover-card__title serif">Traditional Ceremonies</h3>
+        <p class="cover-card__desc">Deep dives into Igbo wedding ceremonies — the Igba Nkwu, Iku Aka, Oji ceremony, and everything else that makes an Igbo wedding the celebration it is. What they mean, how they unfold, and what to expect.</p>
+      </div>
+
+      <div class="cover-card">
+        <div class="cover-card__icon">◉</div>
+        <h3 class="cover-card__title serif">Bridal Beauty &amp; Styling</h3>
+        <p class="cover-card__desc">From coral bead styling to Isi Agu fabric guides and gele wrapping tutorials — everything you need to look and feel your most radiant on your Igbo traditional wedding day.</p>
+      </div>
+
+      <div class="cover-card">
+        <div class="cover-card__icon">◆</div>
+        <h3 class="cover-card__title serif">Food &amp; Catering</h3>
+        <p class="cover-card__desc">Nigerian wedding food is a love language. We cover ofe onugbu, ofe akwu, jollof rice, puff puff, and how to negotiate with caterers so your guests go home full and happy.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name serif">Aso Ebi</div>
+          <p class="footer__brand-desc">Celebrating Igbo and Nigerian wedding traditions, fashion, and culture. Your guide to Aso Ebi, ceremonies, and beauty.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Pages</div>
+          <div class="footer__col-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Categories</div>
+          <div class="footer__col-links">
+            <a href="blog.html?cat=ceremonies">Traditional Ceremonies</a>
+            <a href="blog.html?cat=beauty">Bridal Beauty</a>
+            <a href="blog.html?cat=food">Food &amp; Catering</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Follow</div>
+          <div class="footer__col-links">
+            <span>Instagram</span>
+            <span>Pinterest</span>
+            <span>Twitter/X</span>
+            <span>YouTube</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Aso Ebi. All rights reserved.</span>
+        <span>Made with love for Nigerian weddings</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

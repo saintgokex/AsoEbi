@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Aso Ebi</title>
+  <meta name="description" content="Explore Igbo wedding guides, traditions, styling tips, and real stories from the world of Nigerian weddings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">Aso Ebi</span>
+        <span class="nav__logo-sub">Nigerian Wedding Blog</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html"   class="nav__link">Home</a>
+        <a href="blog.html"    class="nav__link nav__link--active">Blog</a>
+        <a href="about.html"   class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <button class="nav__burger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html"   class="nav__link">Home</a>
+      <a href="blog.html"    class="nav__link nav__link--active">Blog</a>
+      <a href="about.html"   class="nav__link">About</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header__inner">
+      <p class="page-header__eyebrow">The Blog</p>
+      <h1 class="page-header__title serif">All Stories</h1>
+      <p class="page-header__desc">Explore Igbo wedding guides, traditions, styling tips, and real stories from the world of Nigerian celebrations.</p>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER -->
+  <div class="cat-filter">
+    <div class="cat-filter__inner">
+      <button class="cat-filter__btn cat-filter__btn--active" onclick="filterCat(this,'all')">All</button>
+      <button class="cat-filter__btn" onclick="filterCat(this,'ceremonies')">Traditional Ceremonies</button>
+      <button class="cat-filter__btn" onclick="filterCat(this,'beauty')">Bridal Beauty &amp; Styling</button>
+      <button class="cat-filter__btn" onclick="filterCat(this,'food')">Food &amp; Catering</button>
+    </div>
+  </div>
+
+  <!-- POSTS GRID -->
+  <section class="blog-grid">
+    <div class="blog-grid__posts" id="postsGrid">
+
+      <!-- Post 1: Igba Nkwu -->
+      <a href="post.html" class="card card--blog" data-cat="ceremonies">
+        <div class="img-cover" style="height:220px;">
+          <img src="https://images.unsplash.com/photo-nRrFmCS6vTE?auto=format&fit=crop&w=700&q=80"
+               alt="Nigerian couple in Igbo traditional wedding attire, Oyo Nigeria">
+        </div>
+        <div style="padding:24px 24px 28px;">
+          <div class="card__meta">
+            <span class="tag">Traditional Ceremonies</span>
+            <span class="meta-date">April 28, 2026</span>
+            <span class="meta-read">· 8 min read</span>
+          </div>
+          <h3 class="serif" style="font-size:22px;font-weight:400;color:#1A3A4A;line-height:1.3;margin-bottom:10px;">The Igba Nkwu: A Complete Guide to the Igbo Wine-Carrying Ceremony</h3>
+          <p style="font-size:13px;color:var(--body-text);line-height:1.7;margin-bottom:16px;">The Igba Nkwu is the heart of every Igbo traditional wedding — from the bride's search for her groom to the sacred sharing of palm wine.</p>
+          <div class="card__tags">
+            <span class="tag-outline">Igbo</span>
+            <span class="tag-outline">Igba Nkwu</span>
+            <span class="tag-outline">Traditions</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 2: Iku Aka bride price -->
+      <a href="post.html" class="card card--blog" data-cat="ceremonies">
+        <div class="img-cover" style="height:220px;">
+          <img src="https://images.unsplash.com/photo-MpMoc-y8NCs?auto=format&fit=crop&w=700&q=80"
+               alt="Igbo bride in white dress with gold coral bead jewellery">
+        </div>
+        <div style="padding:24px 24px 28px;">
+          <div class="card__meta">
+            <span class="tag">Traditional Ceremonies</span>
+            <span class="meta-date">April 21, 2026</span>
+            <span class="meta-read">· 6 min read</span>
+          </div>
+          <h3 class="serif" style="font-size:22px;font-weight:400;color:#1A3A4A;line-height:1.3;margin-bottom:10px;">Understanding Igbo Bride Price (Iku Aka)</h3>
+          <p style="font-size:13px;color:var(--body-text);line-height:1.7;margin-bottom:16px;">The Iku Aka ceremony is one of the most sacred steps in an Igbo wedding. Here's what every family needs to know before the day.</p>
+          <div class="card__tags">
+            <span class="tag-outline">Igbo</span>
+            <span class="tag-outline">Bride Price</span>
+            <span class="tag-outline">Culture</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 3: Gele styling -->
+      <a href="post.html" class="card card--blog" data-cat="beauty">
+        <div class="img-cover" style="height:220px;">
+          <img src="https://images.unsplash.com/photo-ZDMms8xjS6Y?auto=format&fit=crop&w=700&q=80"
+               alt="Woman in red and gold Igbo bridal attire">
+        </div>
+        <div style="padding:24px 24px 28px;">
+          <div class="card__meta">
+            <span class="tag tag--brown">Bridal Beauty &amp; Styling</span>
+            <span class="meta-date">April 14, 2026</span>
+            <span class="meta-read">· 5 min read</span>
+          </div>
+          <h3 class="serif" style="font-size:22px;font-weight:400;color:#1A3A4A;line-height:1.3;margin-bottom:10px;">How to Choose Your Gele Style: A 2026 Guide</h3>
+          <p style="font-size:13px;color:var(--body-text);line-height:1.7;margin-bottom:16px;">The gele is more than a headwrap — it's a crown. We break down the most popular styles, fabrics, and how to choose one for your face shape.</p>
+          <div class="card__tags">
+            <span class="tag-outline">Gele</span>
+            <span class="tag-outline">Styling</span>
+            <span class="tag-outline">Bridal</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 4: Nigerian wedding food -->
+      <a href="post.html" class="card card--blog" data-cat="food">
+        <div class="img-cover" style="height:220px;">
+          <img src="https://images.unsplash.com/photo-b4Ht8TQ1JGo?auto=format&fit=crop&w=700&q=80"
+               alt="Nigerian jollof rice and chicken — essential wedding dish">
+        </div>
+        <div style="padding:24px 24px 28px;">
+          <div class="card__meta">
+            <span class="tag tag--brown">Food &amp; Catering</span>
+            <span class="meta-date">April 7, 2026</span>
+            <span class="meta-read">· 7 min read</span>
+          </div>
+          <h3 class="serif" style="font-size:22px;font-weight:400;color:#1A3A4A;line-height:1.3;margin-bottom:10px;">Essential Nigerian Wedding Dishes: Your Complete Menu Guide</h3>
+          <p style="font-size:13px;color:var(--body-text);line-height:1.7;margin-bottom:16px;">No Nigerian wedding is complete without jollof rice, ofe onugbu, and puff puff. Here's everything your caterer needs on the menu.</p>
+          <div class="card__tags">
+            <span class="tag-outline">Food</span>
+            <span class="tag-outline">Catering</span>
+            <span class="tag-outline">Traditions</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 5: Women elders / ceremony -->
+      <a href="post.html" class="card card--blog" data-cat="ceremonies">
+        <div class="img-cover" style="height:220px;">
+          <img src="https://images.unsplash.com/photo-brJ-qrH1PaU?auto=format&fit=crop&w=700&q=80"
+               alt="Women in traditional Nigerian ceremonial attire, Lagos">
+        </div>
+        <div style="padding:24px 24px 28px;">
+          <div class="card__meta">
+            <span class="tag">Traditional Ceremonies</span>
+            <span class="meta-date">March 31, 2026</span>
+            <span class="meta-read">· 6 min read</span>
+          </div>
+          <h3 class="serif" style="font-size:22px;font-weight:400;color:#1A3A4A;line-height:1.3;margin-bottom:10px;">Nne Mmiri: The Sacred Role of Women Elders in the Igbo Wedding</h3>
+          <p style="font-size:13px;color:var(--body-text);line-height:1.7;margin-bottom:16px;">Elder women are the backbone of every Igbo ceremony — they sing, they pray, and they hold the entire occasion together with grace.</p>
+          <div class="card__tags">
+            <span class="tag-outline">Igbo</span>
+            <span class="tag-outline">Elders</span>
+            <span class="tag-outline">Ceremony</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Post 6: Aso Ebi fabric trends -->
+      <a href="post.html" class="card card--blog" data-cat="beauty">
+        <div class="img-cover" style="height:220px;">
+          <img src="https://images.unsplash.com/photo-YvwLDvrPsFk?auto=format&fit=crop&w=700&q=80"
+               alt="Two women with elaborate braided hairstyles and gold jewellery, Lagos Nigeria">
+        </div>
+        <div style="padding:24px 24px 28px;">
+          <div class="card__meta">
+            <span class="tag tag--brown">Bridal Beauty &amp; Styling</span>
+            <span class="meta-date">March 24, 2026</span>
+            <span class="meta-read">· 4 min read</span>
+          </div>
+          <h3 class="serif" style="font-size:22px;font-weight:400;color:#1A3A4A;line-height:1.3;margin-bottom:10px;">Aso Ebi Fabric Trends for 2026: What's In This Season</h3>
+          <p style="font-size:13px;color:var(--body-text);line-height:1.7;margin-bottom:16px;">Lace, george, and ankara fabrics are having a moment. We round up the hottest Aso Ebi colours and patterns this Igbo wedding season.</p>
+          <div class="card__tags">
+            <span class="tag-outline">Aso Ebi</span>
+            <span class="tag-outline">Fashion</span>
+            <span class="tag-outline">Fabric</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name serif">Aso Ebi</div>
+          <p class="footer__brand-desc">Celebrating Igbo and Nigerian wedding traditions, fashion, and culture. Your guide to Aso Ebi, ceremonies, and beauty.</p>
+        </div>
+        <div>
+          <div class="footer__col-title">Pages</div>
+          <div class="footer__col-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Categories</div>
+          <div class="footer__col-links">
+            <a href="blog.html?cat=ceremonies">Traditional Ceremonies</a>
+            <a href="blog.html?cat=beauty">Bridal Beauty</a>
+            <a href="blog.html?cat=food">Food &amp; Catering</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__col-title">Follow</div>
+          <div class="footer__col-links">
+            <span>Instagram</span>
+            <span>Pinterest</span>
+            <span>Twitter/X</span>
+            <span>YouTube</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Aso Ebi. All rights reserved.</span>
+        <span>Made with love for Nigerian weddings</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    function filterCat(btn, cat) {
+      document.querySelectorAll('.cat-filter__btn').forEach(b => b.classList.remove('cat-filter__btn--active'));
+      btn.classList.add('cat-filter__btn--active');
+      document.querySelectorAll('#postsGrid .card').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('cat');
+      if (cat) {
+        const btn = document.querySelector(`.cat-filter__btn[onclick*="'${cat}'"]`);
+        if (btn) filterCat(btn, cat);
+      }
+    });
+  </script>
+</body>
+</html>
